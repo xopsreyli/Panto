@@ -1,0 +1,103 @@
+@use "../../../common/colors/colors" as colors;
+@use "../../../common/mixins/mixins" as mixins;
+
+.intro-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateZ(-1000px) scale(2);
+  z-index: -2;
+}
+
+.intro {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  @include mixins.flex(
+          $flex-direction: column,
+          $align-items: center,
+  );
+  background-color: transparent;
+  z-index: -1;
+
+  &__header-box {
+    align-self: stretch;
+  }
+
+  &__title {
+    text: {
+      align: center;
+      transform: capitalize;
+    }
+    color: colors.$white;
+    font: {
+      size: 80px;
+      weight: 700;
+    }
+    line-height: 130%;
+    margin: {
+      top: 80px;
+      bottom: 16px;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    color: colors.$white;
+    font-size: 24px;
+    line-height: 160%;
+    opacity: 0.8;
+    margin-bottom: 44px;
+  }
+
+  &__search {
+    @include mixins.flex(
+            $align-items: center,
+            $gap: 8px,
+    );
+    background-color: colors.$white-o15;
+    backdrop-filter: blur(3px);
+    border: {
+      width: 1px;
+      style: solid;
+      color: colors.$white-o60;
+      radius: 42px;
+    }
+    padding: {
+      top: 8px;
+      bottom: 8px;
+      left: 20px;
+      right: 8px;
+    }
+  }
+
+  &__search-input {
+    width: 264px;
+    color: colors.$white;
+    font-size: 18px;
+
+    &::placeholder {
+      color: colors.$white-o80;
+    }
+  }
+
+  &__search-button {
+    @include mixins.flex(
+            $justify-content: center,
+            $align-items: center,
+    );
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: colors.$orange;
+  }
+
+  &__search-icon {
+    width: 18px;
+
+    path {
+      fill: colors.$white;
+    }
+  }
+}

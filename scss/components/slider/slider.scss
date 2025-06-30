@@ -1,0 +1,56 @@
+@use "../../common/colors/colors" as colors;
+@use "../../common/mixins/mixins" as mixins;
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1250px;
+
+  &__button {
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    aspect-ratio: 1;
+    background-color: colors.$white;
+    border-radius: 50%;
+    box-shadow: 0 7px 20px colors.$black-o06;
+    @include mixins.flex(
+            $justify-content: center,
+            $align-items: center,
+    );
+    z-index: 2;
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+
+    &-image {
+      width: 26px;
+
+      path {
+        stroke: colors.$black;
+      }
+    }
+  }
+
+  &__track-box {
+    width: 100%;
+    overflow-x: clip;
+    padding: {
+      left: 25px;
+      right: 25px;
+    }
+    margin: auto;
+  }
+
+  &__track {
+    @include mixins.flex(
+            $align-items: stretch,
+            $gap: 40px,
+    );
+  }
+}

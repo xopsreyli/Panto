@@ -1,0 +1,109 @@
+@use "../../common/reset";
+@use "../../common/colors/colors";
+@use "../../common/mixins/mixins";
+@use "intro/intro";
+@use "../../components/header/header";
+@use "../../components/logo/logo";
+@use "why-us/why-us";
+@use "../../components/more-link/more-link";
+@use "best-sell/best-sell";
+@use "../../components/slider/slider";
+@use "../../components/product-card/product-card";
+@use "../../components/media/media";
+@use "experience/experience";
+@use "materials/materials";
+@use "testimonials/testimonials";
+@use "../../components/testimonial-card/testimonial-card";
+@use "../../components/footer/footer";
+@use "animations/animations";
+
+.parallax-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: {
+    y: auto;
+    x: hidden;
+  }
+  perspective: 1000px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+
+  &__p80 {
+    padding: {
+      left: 80px;
+      right: 80px;
+    }
+  }
+}
+
+.section {
+  background-color: colors.$white;
+
+  &--grey {
+    background-color: colors.$light-grey;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    color: colors.$orange;
+    font: {
+      size: 18px;
+      weight: 600;
+    }
+    letter-spacing: 3.15px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    text-transform: capitalize;
+    color: colors.$black;
+    font: {
+      size: 42px;
+      weight: 700;
+    }
+  }
+
+  &__description {
+    max-width: 556px;
+    color: colors.$black;
+    font-size: 18px;
+    line-height: 185%;
+    opacity: 0.8;
+    margin: {
+      top: 20px;
+      bottom: 24px;
+    }
+  }
+}
+
+.after-intro-shadow {
+  border: none;
+  box-shadow: 0 0 40px 60px colors.$white;
+}
+
+// about
+
+.about {
+  @include mixins.flex(
+          $align-items: center,
+          $gap: 80px,
+  );
+
+  &__block {
+    flex: 1;
+  }
+}
+
+.experience__image-shadow,
+.materials__image-shadow,
+.testimonial-card__background-shadow {
+  bottom: 0;
+  width: 88%;
+  transform: translate3d(-50%, 10%, 0);
+  border-radius: 49px;
+  filter: blur(25px);
+}

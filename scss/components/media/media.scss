@@ -1,0 +1,34 @@
+.media{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &--rounded20 {
+      border-radius: 20px;
+    }
+
+    &--circle {
+      border-radius: 50%;
+    }
+  }
+
+  &__shadow {
+    position: absolute;
+    left: 50%;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  &__decoration {
+    position: absolute;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    z-index: -1;
+  }
+}

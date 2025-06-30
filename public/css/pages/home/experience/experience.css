@@ -1,0 +1,22 @@
+.experience {
+  padding-top: 300px;
+  padding-bottom: 270px;
+}
+.experience__image-box {
+  max-width: 602px;
+}
+.experience__image-decoration-1 {
+  left: -13%;
+  top: -15%;
+  width: 82%;
+  height: 95%;
+}
+.experience__image-decoration-2 {
+  right: -12%;
+  top: 50%;
+  width: 82%;
+  height: 68%;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=experience.css.map */

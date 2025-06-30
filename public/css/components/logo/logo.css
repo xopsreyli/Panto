@@ -1,0 +1,14 @@
+.logo {
+  display: block;
+  text-transform: capitalize;
+  font-size: 28px;
+  font-weight: 700;
+}
+.logo--light {
+  color: #fff;
+}
+.logo--dark {
+  color: #1E1E1E;
+}
+
+/*# sourceMappingURL=logo.css.map */

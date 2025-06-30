@@ -1,0 +1,39 @@
+.why-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 112px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.why-us__title {
+  flex-shrink: 0;
+}
+.why-us__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 28px;
+}
+.why-us__card {
+  flex: 1;
+}
+.why-us__card-title {
+  text-transform: capitalize;
+  color: #1E1E1E;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+.why-us__card-text {
+  color: #1E1E1E;
+  font-size: 16px;
+  line-height: 185%;
+  opacity: 0.8;
+  margin-bottom: 14px;
+}
+
+/*# sourceMappingURL=why-us.css.map */

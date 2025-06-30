@@ -1,0 +1,30 @@
+@use "../../common/colors/colors" as colors;
+@use "../../common/mixins/mixins" as mixins;
+
+.more {
+  @include mixins.flex(
+          $align-items: center,
+          $gap: 12px,
+  );
+
+  &__text {
+    text-transform: capitalize;
+    color: colors.$orange;
+    font: {
+      size: 14px;
+      weight: 500;
+    }
+
+    &--large {
+      font-size: 18px;
+    }
+  }
+
+  &__image {
+    width: 48px;
+
+    path {
+      stroke: colors.$orange;
+    }
+  }
+}

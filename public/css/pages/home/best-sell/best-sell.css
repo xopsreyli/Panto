@@ -1,0 +1,48 @@
+.best-sell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.best-sell__filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+  background-color: #eee;
+  border-radius: 44px;
+  padding: 6px;
+  margin-top: 32px;
+  margin-bottom: 80px;
+}
+.best-sell__filter-input {
+  display: none;
+}
+.best-sell__filter-input:checked + .best-sell__filter-label {
+  background-color: #fff;
+}
+.best-sell__filter-label {
+  cursor: pointer;
+  color: #1E1E1E;
+  font-size: 18px;
+  line-height: 185%;
+  border-radius: 32px;
+  opacity: 0.8;
+  padding: 7px 20px;
+}
+.best-sell__filter-label:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.best-sell__slider {
+  margin-bottom: 60px;
+}
+.best-sell__slider .slider__button {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=best-sell.css.map */

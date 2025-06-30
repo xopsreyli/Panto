@@ -1,0 +1,37 @@
+@use "../../../common/mixins/mixins" as mixins;
+
+.materials {
+  padding-bottom: 240px;
+
+  &__info {
+    padding-left: 80px;
+  }
+
+  &__gallery {
+    display: grid;
+    gap: 42px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 10fr 13fr;
+  }
+
+  &__gallery-box2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    @include mixins.flex(
+            $align-items: flex-end,
+    );
+    padding: {
+      top: 140px;
+      bottom: 8px;
+    }
+  }
+
+  &__image-decoration {
+    top: -16%;
+    right: -45%;
+    width: 108%;
+    height: 95%;
+  }
+}

@@ -1,0 +1,18 @@
+@use "../../common/colors/colors" as colors;
+
+.logo {
+  display: block;
+  text-transform: capitalize;
+  font: {
+    size: 28px;
+    weight: 700;
+  }
+
+  &--light {
+    color: colors.$white;
+  }
+
+  &--dark {
+    color: colors.$black;
+  }
+}

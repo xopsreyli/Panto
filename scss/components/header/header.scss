@@ -1,0 +1,63 @@
+@use "../../common/colors/colors" as colors;
+@use "../../common/mixins/mixins" as mixins;
+
+.header {
+  @include mixins.flex(
+          $justify-content: space-between,
+          $align-items: center
+  );
+  padding-top: 40px;
+
+  &__navigation {
+    @include mixins.flex(
+            $gap: 64px,
+    );
+  }
+
+  &__link {
+    text-transform: capitalize;
+    color: colors.$white;
+    font: {
+      size: 18px;
+      weight: 500;
+    }
+  }
+
+  &__list {
+    @include mixins.flex(
+            $align-items: center,
+            $gap: 8px,
+    );
+  }
+
+  &__list-arrow {
+    width: 18px;
+
+    path {
+      fill: colors.$white;
+    }
+  }
+
+  &__bag {
+    position: relative;
+  }
+
+  &__bag-img {
+    width: 34px;
+
+    path {
+      fill: colors.$white;
+    }
+  }
+
+  &__bag-counter {
+    position: absolute;
+    right: -2px;
+    top: 4px;
+    background-color: colors.$orange;
+    border-radius: 100%;
+    color: colors.$white;
+    font-size: 14px;
+    padding: 4px;
+  }
+}

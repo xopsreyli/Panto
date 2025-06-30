@@ -1,0 +1,55 @@
+@use "../../../common/colors/colors" as colors;
+@use "../../../common/mixins/mixins" as mixins;
+
+.best-sell {
+  @include mixins.flex(
+          $flex-direction: column,
+          $align-items: center,
+  );
+  padding: {
+    top: 50px;
+    bottom: 50px;
+  }
+
+  &__filter {
+    @include mixins.flex();
+    background-color: colors.$bright-grey;
+    border-radius: 44px;
+    padding: 6px;
+    margin: {
+      top: 32px;
+      bottom: 80px;
+    }
+
+    &-input {
+      display: none;
+
+      &:checked + .best-sell__filter-label {
+        background-color: colors.$white;
+      }
+    }
+
+    &-label {
+      cursor: pointer;
+      color: colors.$black;
+      font-size: 18px;
+      line-height: 185%;
+      border-radius: 32px;
+      opacity: 0.8;
+      padding: 7px 20px;
+
+      &:hover {
+        background-color: colors.$white-o40;
+      }
+    }
+  }
+
+  &__slider {
+    margin-bottom: 60px;
+
+    .slider__button {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

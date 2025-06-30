@@ -1,0 +1,16 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+  padding-bottom: 244px;
+}
+.testimonials__slider {
+  margin-top: 60px;
+}
+.testimonials__slider .slider__button {
+  top: 30%;
+}
+
+/*# sourceMappingURL=testimonials.css.map */

@@ -1,0 +1,78 @@
+@use "../../common/colors/colors" as colors;
+@use "../../common/mixins/mixins" as mixins;
+
+.testimonial-card {
+  flex: 1;
+
+  &__content {
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    @include mixins.flex(
+            $flex-direction: column,
+            $align-items: center,
+    );
+    border-radius: 18px;
+    background-color: colors.$white;
+    padding: 40px 40px 16px;
+  }
+
+  &__avatar-box {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    aspect-ratio: 1;
+    box-sizing: content-box;
+    background-color: colors.$white;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    padding: 8px;
+  }
+
+  &__avatar-shadow {
+    width: 100%;
+    bottom: -5px;
+    border-radius: 50%;
+    filter: blur(13px);
+    transform: translateX(-50%);
+  }
+
+  &__name {
+    color: colors.$black;
+    font: {
+      size: 18px;
+      weight: 700;
+    }
+    margin-bottom: 6px;
+  }
+
+  &__from {
+    color: colors.$black;
+    font-size: 12px;
+    opacity: 0.6;
+  }
+
+  &__comment {
+    text-align: center;
+    color: colors.$black;
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 22px 0;
+  }
+
+  &__rating {
+    @include mixins.flex(
+            $gap: 6px
+    );
+
+    &-star {
+      width: 14px;
+      fill: colors.$mellow-apricot;
+
+      &--inactive {
+        opacity: 40%;
+      }
+    }
+  }
+}

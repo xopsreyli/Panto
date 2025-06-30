@@ -1,0 +1,33 @@
+.materials {
+  padding-bottom: 240px;
+}
+.materials__info {
+  padding-left: 80px;
+}
+.materials__gallery {
+  display: grid;
+  gap: 42px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 10fr 13fr;
+}
+.materials__gallery-box2 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 0;
+  padding-top: 140px;
+  padding-bottom: 8px;
+}
+.materials__image-decoration {
+  top: -16%;
+  right: -45%;
+  width: 108%;
+  height: 95%;
+}
+
+/*# sourceMappingURL=materials.css.map */

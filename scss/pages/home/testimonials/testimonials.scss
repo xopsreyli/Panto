@@ -1,0 +1,17 @@
+@use "../../../common/mixins/mixins" as mixins;
+
+.testimonials {
+  @include mixins.flex(
+          $flex-direction: column,
+          $align-items: center,
+  );
+  padding-bottom: 244px;
+
+  &__slider {
+    margin-top: 60px;
+
+    .slider__button {
+      top: 30%;
+    }
+  }
+}

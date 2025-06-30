@@ -1,0 +1,24 @@
+.more {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+.more__text {
+  text-transform: capitalize;
+  color: #E58411;
+  font-size: 14px;
+  font-weight: 500;
+}
+.more__text--large {
+  font-size: 18px;
+}
+.more__image {
+  width: 48px;
+}
+.more__image path {
+  stroke: #E58411;
+}
+
+/*# sourceMappingURL=more-link.css.map */

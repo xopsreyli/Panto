@@ -1,0 +1,168 @@
+.intro__title {
+  opacity: 0;
+  transition: all 1s linear;
+}
+.intro__title.visible {
+  opacity: 1;
+}
+.intro__subtitle {
+  opacity: 0;
+  transition: all 0.5s linear 0.5s;
+}
+.intro__subtitle.visible {
+  opacity: 0.8;
+}
+.intro__search {
+  gap: 0;
+  padding: 8px;
+  transition: all 0.8s ease-in-out 1s;
+}
+.intro__search.visible {
+  gap: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 8px;
+}
+.intro__search-input {
+  width: 0;
+  transition: all 0.8s ease-in-out 1s;
+}
+.intro__search-input.visible {
+  width: 264px;
+}
+
+.section__title {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.section__title.visible {
+  opacity: 1;
+}
+
+.why-us__card {
+  opacity: 0;
+  transition: all 0.8s ease-in-out 0.4s;
+}
+.why-us__card:nth-child(2), .why-us__card:nth-child(3) {
+  transform: translateX(-100px);
+}
+.why-us__card:nth-child(2) {
+  transition-delay: 0.6s;
+}
+.why-us__card:nth-child(3) {
+  transition-delay: 0.8s;
+}
+.why-us__card.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.best-sell .more,
+.experience .more,
+.materials .more {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.4s ease-in-out;
+}
+.best-sell .more.visible,
+.experience .more.visible,
+.materials .more.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.best-sell .slider {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.best-sell .slider.visible {
+  opacity: 1;
+}
+
+.product-card__image {
+  opacity: 0;
+  transition: all 0.5s ease-in-out 0.5s;
+}
+.product-card__image.visible {
+  opacity: 1;
+}
+
+.experience .section__description,
+.materials .section__description {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.experience .section__description.visible,
+.materials .section__description.visible {
+  opacity: 1;
+}
+.experience .more,
+.materials .more {
+  transition-delay: 1s;
+}
+
+.experience__image-decoration-1, .experience__image-decoration-2 {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.experience__image-decoration-1.visible, .experience__image-decoration-2.visible {
+  opacity: 1;
+}
+.experience__image-decoration-2 {
+  transition-delay: 0.25s;
+}
+.experience .media__image {
+  opacity: 0;
+  transition: all 1s linear 0.5s;
+}
+.experience .media__image.visible {
+  opacity: 1;
+}
+.experience .media__shadow {
+  opacity: 0;
+  transition: all 0.5s ease-in-out 1s;
+}
+.experience .media__shadow.visible {
+  opacity: 1;
+}
+
+.materials__image-decoration {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.materials__image-decoration.visible {
+  opacity: 1;
+}
+.materials .media__image {
+  opacity: 0;
+  transition: all 1s linear 0.5s;
+}
+.materials .media__image.visible {
+  opacity: 1;
+}
+.materials .media__shadow {
+  opacity: 0;
+  transition: all 0.5s ease-in-out 1s;
+}
+.materials .media__shadow.visible {
+  opacity: 1;
+}
+
+.testimonial-card {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 1s ease-in-out;
+}
+.testimonial-card.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+/*# sourceMappingURL=animations.css.map */
