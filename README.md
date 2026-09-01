@@ -1,6 +1,14 @@
 # Panto
 Panto landing page using BEM naming principles and SASS(SCSS) to write styles
 
+## 🔗 Live Demo
+
+[View Live Project](https://xopsreyli.github.io/Panto/)
+
+## 📸 Preview
+
+![Panto Landing Page Preview](./docs/img/intro.png)
+
 ## How to Start the Project
 1. Install dependencies by running:
    ```bash
